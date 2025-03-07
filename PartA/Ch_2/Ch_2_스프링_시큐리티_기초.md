@@ -74,6 +74,10 @@ This generated password is for development use only. Your security configuration
     - Forbidden : 호출자는 누구인지 식별했지만, 호출자에게 이용권리가 없을 때 발생
 ---
 
-- postman 활용하기
+- postman 활용하기  
+
 [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
 ![postman활용.png](./postman.png)
+
+
+
