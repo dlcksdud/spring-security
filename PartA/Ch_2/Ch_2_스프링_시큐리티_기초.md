@@ -1,5 +1,7 @@
 ## Part A. 로그인, 로그아웃, 회원가입으로 배워보는 스프링 시큐리티 기초
 ### Ch 2. 스프링 시큐리티 기초
+---
+
 ### 01. 스프링 시큐리티의 Hello World
 - 2024년 7월 기준 최신버전은 6.3 버전
 [https://github.com/spring-projects/spring-security](https://github.com/spring-projects/spring-security)
@@ -60,4 +62,18 @@ This generated password is for development use only. Your security configuration
 - 스프링 시큐리티가 적용된 애플리케이션의 엔드포인트를 호출하려면 위 비밀번호를 사용해야 함
     - UserDetailsServiceAutoConfiguration 에서 생성됨
     - 스프링 시큐리티가 기본으로 설정되어 있을 때, HTTP Basic 인증 방식으로 동작함(헤어로 아이디와 패스워드를 전달)
-    
+
+![spring_security_login.png](./springsecurity_login.png)
+- 기본 사용자 아이디 user, 기본 비밀번호는 터미널에 제공된 값(UUID) 활용
+
+
+- HTTP 401 에러
+    - Unauthorized 상태 : 인증 실패를 의미함
+    - 애플리케이션을 설계할 때 자격 증명이 누락되거나 잘못되었을 때 발생
+- HTTP 403 에러
+    - Forbidden : 호출자는 누구인지 식별했지만, 호출자에게 이용권리가 없을 때 발생
+---
+
+- postman 활용하기
+[https://www.postman.com/downloads/](https://www.postman.com/downloads/)
+![postman활용.png](./postman.png)
